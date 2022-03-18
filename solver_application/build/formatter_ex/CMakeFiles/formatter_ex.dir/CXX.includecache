@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/daria/lab03/formatter_ex_lib/formatter_ex.cpp
+formatter_ex.h
+/home/daria/lab03/formatter_ex_lib/formatter_ex.h
+formatter.h
+/home/daria/lab03/formatter_ex_lib/formatter.h
+
+/home/daria/lab03/formatter_ex_lib/formatter_ex.h
+string
+-
+iostream
+-
+
+/home/daria/lab03/formatter_lib/formatter.h
+string
+-
+

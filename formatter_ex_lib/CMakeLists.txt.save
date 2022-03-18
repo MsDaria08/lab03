@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.4)
+
+project(formatter_ex)
+add_library(formatter_ex ${CMAKE_CURRENT_SOURCES_DIR}/formatter_ex.cpp
+			 ${CMAKE_CURRENT_SOURCES_DIR}/formatter_ex.h)
+add_subdirictory(${CMAKE_CURRENT_SOURCE_DIR}/../formatter_lib ${CURRENT_SOURCE_BINARY_DIR}/formatter)
