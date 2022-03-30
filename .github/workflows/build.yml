@@ -1,0 +1,33 @@
+name: CI
+on: [ push ]
+
+jobs:
+  hello_world_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: building hello_world_application
+        shell: bash
+        run: |
+          cd hello_world_application
+          cmake -B build
+          cd build
+          make
+
+  solver_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: building solver_application
+        shell: bash
+        run: |
+          cd solver_application
+          cmake -B build
+          cd build
+          make
