@@ -16,6 +16,7 @@ jobs:
           cmake -B build
           cd build
           make
+          ./hello_world
 
   solver_build:
     runs-on: ubuntu-latest
