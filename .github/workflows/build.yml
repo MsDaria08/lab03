@@ -33,4 +33,12 @@ jobs:
           cd build
           make
           ./question
+
+      - name: packaging solver_application
+        shell: bash
+        working-directory: solver_application
+        run: |
+          cd build
+          make package
+          make package_source
           
