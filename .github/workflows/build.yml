@@ -17,6 +17,7 @@ jobs:
           cd build
           make
 
+
   solver_build:
     runs-on: ubuntu-latest
 
