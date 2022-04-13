@@ -1,3 +1,0 @@
-/home/daria/lab03/solver_lib/build/CMakeFiles/rebuild_cache.dir
-/home/daria/lab03/solver_lib/build/CMakeFiles/edit_cache.dir
-/home/daria/lab03/solver_lib/build/CMakeFiles/solver.dir

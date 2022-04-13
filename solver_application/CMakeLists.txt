@@ -1,8 +1,22 @@
-cmake_minimum_required(VERSION 3.4)
+cmake_minimum_required(VERSION 3.12)
 
 project(question)
 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../formatter_ex_lib ${CMAKE_CURRENT_BINARY_DIR}/formatter_ex)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../solver_lib ${CMAKE_CURRENT_BINARY_DIR}/solver)
-add_executable(question ${CMAKE_CURRENT_SOURCE_DIR}/equation.cpp)
+option(CPACK_GENERATOR_RPM OFF)
+
+add_subdirectory(../formatter_ex_lib formatter_ex)
+add_subdirectory(../solver_lib solver_lib)
+add_executable(question equation.cpp)
 target_link_libraries(question formatter_ex solver)
+
+install(TARGETS question RUNTIME DESTINATION bin)
+set(CPACK_SOURCE_GENERATOR "TGZ;ZIP")
+
+if(CPACK_GENERATOR_RPM)
+    set(CPACK_GENERATOR "RPM")
+endif()
+
+include(CPack)
+
+unset(CPack)
+unset(CPACK_GENERATOR_RPM CACHE)
