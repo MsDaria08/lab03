@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /home/daria/workflows/projects/lab06 Select CMakeLists.txt
