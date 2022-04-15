@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(question)
-
 option(CPACK_GENERATOR_RPM OFF)
+
+
+project(question)
 
 add_subdirectory(../formatter_ex_lib formatter_ex)
 add_subdirectory(../solver_lib solver_lib)
